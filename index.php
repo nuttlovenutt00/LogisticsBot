@@ -32,9 +32,38 @@
   }
 
   $reply_help=[
-    "type"=> "sticker",
-  "packageId"=> "1",
-  "stickerId"=> "1"
+    "type"=> "template",
+  "altText"=> "this is a carousel template",
+  "template"=> [
+    "type"=> "carousel",
+    "actions"=> [],
+    "columns"=> [
+      [
+        "thumbnailImageUrl"=> "https://raw.githubusercontent.com/nuttlovenutt00/nutt/master/3.jpg",
+        "title"=> "มอคค่า",
+        "text"=> "วิธีการสั่ง พิมพ์ P101@จำนวนที่ต้องการ",
+        "actions"=> [
+          [
+            "type"=> "message",
+            "label"=> "Code : P100",
+            "text"=> "1"
+          ]
+        ]
+      ],
+      [
+        "thumbnailImageUrl"=> "https://raw.githubusercontent.com/nuttlovenutt00/nutt/master/3.jpg",
+        "title"=> "มอคค่า",
+        "text"=> "วิธีการสั่ง พิมพ์ P101@จำนวนที่ต้องการ ",
+        "actions"=> [
+          [
+            "type"=> "message",
+            "label"=> "Code : P101",
+            "text"=> "Action 1"
+          ]
+        ]
+      ]
+    ]
+  ]
   ];
     
   $replyJson["messages"][0] = $reply_help;
