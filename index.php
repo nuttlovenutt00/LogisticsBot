@@ -59,7 +59,7 @@
           "action"=> [
             "type"=> "uri",
             "label"=> "กดเลย",
-            "uri"=> "http://ttcctv.dyndns.org:8088/dashboard?userid=".$userID
+            "uri"=> "http://ttcctv.dyndns.org:8088/Logistic/?userid=".$userID
           ],
           "color"=> "#3B9810",
           "margin"=> "sm",
