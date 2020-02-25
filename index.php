@@ -32,21 +32,9 @@
   }
 
   $reply_help=[
-   "type"=> "template",
-  "altText"=> "this is a buttons template",
-  "template"=> [
-    "type"=> "buttons",
-    "actions"=> [
-      [
-        "type"=> "uri",
-        "label"=> "Action 1",
-        "uri"=> "https://logisticsbot.herokuapp.com/"
-      ]
-    ],
-    "thumbnailImageUrl"=> "SPECIFY_YOUR_IMAGE_URL",
-    "title"=> "Title",
-    "text"=> "Text"
-  ]
+    "type"=> "sticker",
+  "packageId"=> "1",
+  "stickerId"=> "1"
   ];
     
   $replyJson["messages"][0] = $reply_help;
