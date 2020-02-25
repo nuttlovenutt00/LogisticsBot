@@ -32,9 +32,21 @@
   }
 
   $reply_help=[
-    "type"=> "sticker",
-  "packageId"=> "1",
-  "stickerId"=> "1"
+   "type"=> "template",
+  "altText"=> "this is a buttons template",
+  "template"=> [
+    "type"=> "buttons",
+    "actions"=> [
+      [
+        "type"=> "uri",
+        "label"=> "Action 1",
+        "uri"=> "http://ttcctv.dyndns.org:8088/CoffeeOrder/"
+      ]
+    ],
+    "thumbnailImageUrl"=> "SPECIFY_YOUR_IMAGE_URL",
+    "title"=> "Title",
+    "text"=> "Text"
+  ]
   ];
     
   $replyJson["messages"][0] = $reply_help;
