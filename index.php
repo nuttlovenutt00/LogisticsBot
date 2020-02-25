@@ -38,9 +38,13 @@
     return $result;
   }
 
-
-
-  
+  $reply_help=[
+    "type"=> "sticker",
+  "packageId"=> "1",
+  "stickerId"=> "1"
+  ];
+    
+  $replyJson["messages"][0] = $reply_help;
   
   
 
