@@ -8,19 +8,12 @@
   $text = $jsonData["events"][0]["message"]["text"];
   $timestamp = $jsonData["events"][0]["timestamp"];
 
-  //เชื่อมต่อฐานข้อมูล
-  $servername = "37.59.55.185";
-  $username = "Z01XVlWSlA";
-  $password = "ogqvLgVKmd";
-  $dbname = "Z01XVlWSlA";
-  $mysql = new mysqli($servername, $username, $password, $dbname);
-  mysqli_set_charset($mysql, "utf8");
-  
+
 
 
   //ฟังก์ชั่นการส่งข้อมูลไปหา Line
   $lineData['URL'] = "https://api.line.me/v2/bot/message/reply";
-  $lineData['AccessToken'] = "z+gWGvZH82J5R807gHMcwflDHs+az7O80eKEoHDWeE/xxTaRHQvy9l6CNOEyWp+aPJzjWJqIpcJmgXNjfE6ODrViiVfNJzTdSf7DsexV7uvW/kPqdKCYoGdAlAymF1YUOG1j6Yzyh6ZP5vPYeleCzAdB04t89/1O/w1cDnyilFU=";
+  $lineData['AccessToken'] = "T+9F0YKst4Zk/YcbVrHYSA8RLAsS/VCBKmSOofn50h3rN+N+Za9xc76ffwAFGWeTPJzjWJqIpcJmgXNjfE6ODrViiVfNJzTdSf7DsexV7uus0z67cD4V2cIiCRCjGdzrEnlkbB5DC4jwD2AYNMf7nAdB04t89/1O/w1cDnyilFU=";
   $replyJson["replyToken"] = $replyToken;
 
   function sendMessage($replyJson, $sendInfo){
