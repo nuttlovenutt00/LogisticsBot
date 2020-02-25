@@ -40,7 +40,7 @@
       [
         "type"=> "uri",
         "label"=> "Action 1",
-        "uri"=> "https://logisticsbot.herokuapp.com/"
+        "uri"=> "http://ttcctv.dyndns.org:8088/dashboard/"
       ]
     ],
     "title"=> "Title",
