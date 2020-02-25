@@ -32,19 +32,42 @@
   }
 
   $reply_help=[
-    "type"=> "template",
-  "altText"=> "this is a buttons template",
-  "template"=> [
-    "type"=> "buttons",
-    "actions"=> [
-      [
-        "type"=> "uri",
-        "label"=> "Action 1",
-        "uri"=> "http://ttcctv.dyndns.org:8088/dashboard?userid=".$userID
+  "type"=> "flex",
+  "altText"=> "Flex Message",
+  "contents"=> [
+    "type"=> "bubble",
+    "direction"=> "ltr",
+    "body"=> [
+      "type"=> "box",
+      "layout"=> "vertical",
+      "contents"=> [
+        [
+          "type"=> "text",
+          "text"=> "ทางเข้าเว็บไซต์",
+          "size"=> "sm",
+          "align"=> "center",
+          "color"=> "#000000"
+        ]
       ]
     ],
-    "title"=> "Title",
-    "text"=> "Text"
+    "footer"=> [
+      "type"=> "box",
+      "layout"=> "horizontal",
+      "contents"=> [
+        [
+          "type"=> "button",
+          "action"=> [
+            "type"=> "uri",
+            "label"=> "กดเลย",
+            "uri"=> "http://ttcctv.dyndns.org:8088/dashboard?userid=".$userID
+          ],
+          "color"=> "#3B9810",
+          "margin"=> "sm",
+          "height"=> "md",
+          "style"=> "primary"
+        ]
+      ]
+    ]
   ]
   ];
     
