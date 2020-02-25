@@ -33,36 +33,18 @@
 
   $reply_help=[
     "type"=> "template",
-  "altText"=> "this is a carousel template",
+  "altText"=> "this is a buttons template",
   "template"=> [
-    "type"=> "carousel",
-    "actions"=> [],
-    "columns"=> [
+    "type"=> "buttons",
+    "actions"=> [
       [
-        "thumbnailImageUrl"=> "https://raw.githubusercontent.com/nuttlovenutt00/nutt/master/3.jpg",
-        "title"=> "มอคค่า",
-        "text"=> "วิธีการสั่ง พิมพ์ P101@จำนวนที่ต้องการ",
-        "actions"=> [
-          [
-            "type"=> "message",
-            "label"=> "Code : P100",
-            "text"=> "1"
-          ]
-        ]
-      ],
-      [
-        "thumbnailImageUrl"=> "https://raw.githubusercontent.com/nuttlovenutt00/nutt/master/3.jpg",
-        "title"=> "มอคค่า",
-        "text"=> "วิธีการสั่ง พิมพ์ P101@จำนวนที่ต้องการ ",
-        "actions"=> [
-          [
-            "type"=> "message",
-            "label"=> "Code : P101",
-            "text"=> "Action 1"
-          ]
-        ]
+        "type"=> "uri",
+        "label"=> "Action 1",
+        "uri"=> "https://logisticsbot.herokuapp.com/"
       ]
-    ]
+    ],
+    "title"=> "Title",
+    "text"=> "Text"
   ]
   ];
     
