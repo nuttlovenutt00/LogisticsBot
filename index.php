@@ -40,7 +40,7 @@
       [
         "type"=> "uri",
         "label"=> "Action 1",
-        "uri"=> "http://ttcctv.dyndns.org:8088/CoffeeOrder/"
+        "uri"=> "https://logisticsbot.herokuapp.com/"
       ]
     ],
     "thumbnailImageUrl"=> "SPECIFY_YOUR_IMAGE_URL",
