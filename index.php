@@ -56,7 +56,7 @@
           "action"=> [
             "type"=> "uri",
             "label"=> "WEBSITE",
-            "uri"=> "http://ttcctv.dyndns.org:8088/Logistic/?userid=".$userID
+            "uri"=> "http://ttcctv.dyndns.org:8088/Logistic/Driver/userid/".$userID
           ],
           "color"=> "#F97913",
           "height"=> "sm",
