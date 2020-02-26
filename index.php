@@ -32,38 +32,34 @@
   }
 
   $reply_help=[
+  
+
   "type"=> "flex",
   "altText"=> "Flex Message",
   "contents"=> [
     "type"=> "bubble",
-    "direction"=> "ltr",
-    "body"=> [
-      "type"=> "box",
-      "layout"=> "vertical",
-      "contents"=> [
-        [
-          "type"=> "text",
-          "text"=> "ทางเข้าเว็บไซต์",
-          "size"=> "sm",
-          "align"=> "center",
-          "color"=> "#000000"
-        ]
-      ]
+    "hero"=> [
+      "type"=> "image",
+      "url"=> "https://raw.githubusercontent.com/nuttlovenutt00/LogisticsBot/master/161595-OVE4FY-964_edit.jpg",
+      "size"=> "full",
+      "aspectRatio"=> "20:13",
+      "aspectMode"=> "cover"
     ],
     "footer"=> [
       "type"=> "box",
-      "layout"=> "horizontal",
+      "layout"=> "vertical",
+      "flex"=> 0,
+      "spacing"=> "sm",
       "contents"=> [
         [
           "type"=> "button",
           "action"=> [
             "type"=> "uri",
-            "label"=> "กดเลย",
+            "label"=> "WEBSITE",
             "uri"=> "http://ttcctv.dyndns.org:8088/Logistic/?userid=".$userID
           ],
-          "color"=> "#3B9810",
-          "margin"=> "sm",
-          "height"=> "md",
+          "color"=> "#F97913",
+          "height"=> "sm",
           "style"=> "primary"
         ]
       ]
