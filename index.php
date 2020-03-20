@@ -31,7 +31,8 @@
     return $result;
   }
 
-  $reply_help=[
+  if($text=="ขอลิ้งเข้าเว็บไซต์"){
+       $reply_help=[
   
 
   "type"=> "flex",
@@ -66,6 +67,29 @@
     ]
   ]
   ];
+  }else if(strpos($text,"+")==0){
+      //เชื่อมต่อฐานข้อมูล
+    $servername = "37.59.55.185";
+    $username = "e9y0ihR9wE";
+    $password = "LQ7rvFsdA8";
+    $dbname = "e9y0ihR9wE";
+    $mysql = new mysqli($servername, $username, $password, $dbname);
+    mysqli_set_charset($mysql, "utf8");
+
+    date_default_timezone_set("Asia/Bangkok");
+    $datetime=date("Y-m-d");
+    $time=date("H:i:s"); 
+
+
+    $mysql->query("INSERT INTO `LOG`(`UserID`, `Text`,`date`, `time`) VALUES ('$userID','$text','$datetime','$time')");
+
+      $reply_help=[ 
+            "type"=> "text",
+           "text"=> "ระบบได้บันทึกข้อมูลของท่านเรียบร้อยแล้ว"
+      ];
+  }
+
+ 
     
   $replyJson["messages"][0] = $reply_help;
   
