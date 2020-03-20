@@ -67,7 +67,7 @@
     ]
   ]
   ];
-  }else if(strpos($text,"+")!=FALSE){
+  }elseif( strpos( $text, "+" )!==FALSE){
       //เชื่อมต่อฐานข้อมูล
     $servername = "37.59.55.185";
     $username = "e9y0ihR9wE";
