@@ -80,8 +80,10 @@
     $datetime=date("Y-m-d");
     $time=date("H:i:s"); 
 
+    $text2= substr($text,1);
 
-    $mysql->query("INSERT INTO `LOG`(`UserID`, `Text`,`date`, `time`) VALUES ('$userID','$text','$datetime','$time')");
+
+    $mysql->query("INSERT INTO `LOG`(`UserID`, `Text`,`date`, `time`) VALUES ('$userID','$text2','$datetime','$time')");
 
       $reply_help=[ 
             "type"=> "text",
