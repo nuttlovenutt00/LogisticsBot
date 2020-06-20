@@ -70,9 +70,9 @@
   }elseif( strpos( $text, "+" )!==FALSE){
       //เชื่อมต่อฐานข้อมูล
     $servername = "37.59.55.185";
-    $username = "e9y0ihR9wE";
-    $password = "LQ7rvFsdA8";
-    $dbname = "e9y0ihR9wE";
+    $username = "rVok8bLITz";
+    $password = "sHzBzihZCy";
+    $dbname = "rVok8bLITz";
     $mysql = new mysqli($servername, $username, $password, $dbname);
     mysqli_set_charset($mysql, "utf8");
 
